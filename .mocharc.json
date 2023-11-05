@@ -1,0 +1,5 @@
+{
+    "require": "mochaConfig.js",
+    "recursive": true,
+    "spec": "src/**/*.spec.js"
+}

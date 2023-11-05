@@ -1,0 +1,33 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:import/errors"
+	],
+	"plugins": ["import", "@stylistic/js"],
+	"rules": {
+		"@stylistic/js/semi": "error",
+		"@stylistic/js/quotes": ["error", "single"],
+		"eqeqeq": "error",
+		"no-await-in-loop": "error",
+		"consistent-return": "error",
+		"curly": "error",
+		"@stylistic/js/arrow-spacing": "error",
+		"@stylistic/js/no-multi-spaces": "error",
+		"@stylistic/js/eol-last": "error",
+		"@stylistic/js/comma-spacing": "error",
+		"@stylistic/js/comma-dangle": ["error", "always-multiline"],
+		"@stylistic/js/indent": ["error", "tab"],
+		"@stylistic/js/no-trailing-spaces": "error",
+		"@stylistic/js/padding-line-between-statements": ["error",
+			{ "blankLine": "always", "prev": "*", "next": "return" }
+		],
+		"@stylistic/js/no-multiple-empty-lines": ["error", { "max": 1 }],
+		"import/order": "error",
+		"no-var": "error"
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	}
+}
