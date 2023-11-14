@@ -1,4 +1,5 @@
 {
+	"parser": "@babel/eslint-parser",
 	"extends": [
 		"eslint:recommended",
 		"plugin:import/errors"
@@ -21,13 +22,20 @@
 		"@stylistic/js/padding-line-between-statements": ["error",
 			{ "blankLine": "always", "prev": "*", "next": "return" }
 		],
-		"@stylistic/js/no-multiple-empty-lines": ["error", { "max": 1 }],
+		"@stylistic/js/no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
 		"import/order": "error",
-		"no-var": "error"
+		"no-var": "error",
+		"@stylistic/js/object-curly-spacing": ["error", "always"],
+		"prefer-template": "error",
+		"@stylistic/js/keyword-spacing": ["error", { "before": true, "after": true }],
+		"@stylistic/js/block-spacing": "error"
 	},
 	"env": {
 		"browser": true,
 		"node": true,
 		"es6": true
+	},
+	"parserOptions": {
+		"requireConfigFile": false
 	}
 }
