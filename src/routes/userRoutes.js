@@ -41,7 +41,7 @@ userRouter.post('/sign-up', async (req, res, next) => {
 	});
 });
 
-userRouter.post('/login', async (req, res, next) => {
+userRouter.post('/sign-in', async (req, res, next) => {
 	return await requestService.handleRequest(req, res, next, async () => {
 		const {
 			email,
